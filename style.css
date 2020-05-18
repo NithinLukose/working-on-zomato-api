@@ -1,0 +1,139 @@
+* {box-sizing: border-box;}
+
+body {
+        
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-section{
+    padding: 100px 0;
+    background-color: #ddd;
+}
+.search-container{
+    
+    margin: auto;
+    width: 60%;
+    
+    padding: 0px;
+    
+    
+}
+
+.search-container input[type=text]{
+    
+    width: 80%;
+    padding: 8px;
+    font-size: 17px;
+    
+    
+}
+.search-container .detect{
+    width:14%;
+    border-radius: 5px 0 0 5px;
+    padding :8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 15px;
+    border: none;
+    background-color: pink;
+}
+.search-container .search{
+    
+    width: 4%;
+    padding :8px;
+    font-size: 19px;
+    border: none;
+    background-color: pink;
+    border-radius: 0 5px 5px 0;
+    
+}
+.search-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height:200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.search-list li{
+    height:100px;
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+.search-list img{
+    
+    float:left;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.collections{
+    padding:100px 100px;
+}
+
+.collections .heading{
+    
+    font-size: 35px;
+    
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+    position: relative;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+
+}
+
+.card img{
+    width: 269.75px;
+    height: 304px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 20px;
+    color: #f1f1f1;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="pubsub.js"></script>
+        <script defer src="findCity.js"></script>
+        <script defer src="searchbar.js"></script>
+        <script defer src="collections.js"></script>
+        
+    </head>
+    <body>
+    
+        <div class='top-section'>
+        
+            <div class="search-container">
+            
+                <form id="search-bar" autocomplete="off">
+                    <input type='button' class="detect" id="detect-location" value="Detect Location">
+                    <input type="text" placeholder="search for restaurant,cuisine or a dish" name="search" id="search">
+                    <button type="submit" class="search"><i class="fa fa-search"></i></button>
+                    
+                </form>
+                <ul class="search-list">
+                    
+                </ul>
+            </div>
+        
+        </div>
+        <div class="collections">
+        
+            <p class="heading">Collections</p>
+            <p>Explore curated lists of top restaurants, cafes, pubs, and bars</p>
+            <div class="row"></div>
+        
+        </div>
+    
+    </body>
+
+</html>
